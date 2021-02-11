@@ -82,7 +82,7 @@ blocks8=new Block(730,135,30,40);
 blocks9=new Block(700,95,30,40);
 ball=Bodies.circle(50,200,20);
 World.add(world,ball);
-slingShot=new SlingShot(this.ball,{x:200,y:200});
+Slingshot=new SlingShot(this.ball,{x:200,y:200});
 }
 function draw(){
 background(backgroundImage);
@@ -145,5 +145,5 @@ function mouseDragged(){
 Matter.Body.setPosition(this.ball,{x:mouseX,y:mouseY});
 }
 function mouseReleased(){
-slingShot.fly();
+Slingshot.fly();
 }
